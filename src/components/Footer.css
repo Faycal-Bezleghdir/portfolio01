@@ -1,0 +1,15 @@
+.footer {
+    border-top: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .gitlogo,
+  .linkedlogo {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+  }
+  

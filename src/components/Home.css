@@ -1,0 +1,119 @@
+.home {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 2rem 0;
+  }
+  
+  .home-container {
+    background: #fef2e8;
+    min-height: 90vh;
+  }
+  
+  .home-text {
+    flex: 1;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+  }
+  
+  .home-text .btn {
+    align-self: flex-start;
+  }
+  
+  .home-img {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .home-img img {
+    width: 500px;
+    max-width: 100%;
+    border-bottom: 6px solid black;
+    border-right: 8px solid black;
+  }
+  
+  .home-text h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-family: "Public Sans", sans-serif;
+  }
+  
+  .home-text p {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-family: "Lato", sans-serif;
+    line-height: 1.5;
+  }
+  
+  .btn {
+    background-color: #fadf0c;
+    color: #000;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border-right: 4px solid black;
+    border-bottom: 6px solid black;
+  }
+  
+  .personal-info {
+    flex: 1;
+    background-color: lightgray; /* Change the background color as desired */
+    padding: 20px;
+  }
+  
+  .skills {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .skills ul {
+    list-style-type: none;
+  }
+  
+  .skills ul li {
+    margin-bottom: 5px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .home-text h1 {
+      font-size: 3rem;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+  
+    .home-text-p {
+      font-size: 1rem;
+    }
+  
+    .home {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .home-text {
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+  
+    .home-img {
+      justify-content: center;
+    }
+  
+    .home-img img {
+      width: 400px;
+    }
+  }
+  
