@@ -3,10 +3,11 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import Layout from "./components/Layout";
 import Home from "./components/Home";
 import MonCv from "./components/MonCv";
-import Projets from "./components/Projets";
+import Projets from "./components/projets";
 import Contact from "./components/Contact";
 import TestimonialsList from "./components/TestimonialsList";
 import TestimonialForm from "./components/TestimonialForm";
+import ProjetDetail from "./components/ProjetDetail";
 
 const initialTestimonials = [
   // Les témoignages existants vont ici...
@@ -34,6 +35,30 @@ const initialTestimonials = [
     id: 5,
     name: "Michael Brown",
     message: "Je suis ravi des résultats obtenus grâce à leur expertise en développement web. Je les recommande sans hésitation pour tout projet web.",
+  },
+];
+
+const mesProjets = [
+  {
+    id: 1,
+    titre: "Application de Gestion de Restaurant en C#",
+    description:
+      "J'ai participé au développement d'une application en C# visant à améliorer la gestion des commandes dans un restaurant. En tant que développeur principal, j'ai conçu l'architecture logicielle et programmé les fonctionnalités clés",
+    technos: ["C#", ".NET", "SQL Server"],
+  },
+  {
+    id: 2,
+    titre: "Application Web pour Pizzeria avec Express et Vue.js",
+    description:
+      "J'ai développé une application web complète pour la gestion d'une pizzeria. Utilisant Express pour le backend et Vue.js pour le frontend, j'ai été responsable de la mise en œuvre des routes, de la création des modèles de données et de la conception des interfaces utilisateur",
+    technos: ["Express", "Vue.js", "MongoDB"],
+  },
+  {
+    id: 3,
+    titre: "Portefeuille de Carrière avec React",
+    description:
+      "J'ai réalisé un projet en React pour créer une interface utilisateur réactive et dynamique. Le projet était un site de portfolio destiné à mettre en valeur mes compétences et faciliter la recherche d'emploi. J'ai créé des composants, géré l'état et intégré des API",
+    technos: ["React", "JavaScript", "HTML", "CSS"],
   },
 ];
 
@@ -76,6 +101,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/cv" element={<MonCv />} />
           <Route path="/projets" element={<Projets />} />
+          <Route path="/projet/:id" element={<ProjetDetail mesProjets={mesProjets} />} />
           <Route path="/contact" element={<Contact />} />
           <Route
             path="/temoignages"
