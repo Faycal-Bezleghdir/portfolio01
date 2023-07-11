@@ -1,0 +1,26 @@
+.testimonial-form {
+    margin: 20px;
+    background-color: #fef2e8;
+  }
+  
+  .testimonial-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  .testimonial-form input,
+  .testimonial-form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-form button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
