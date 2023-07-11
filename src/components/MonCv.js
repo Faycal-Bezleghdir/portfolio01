@@ -1,4 +1,4 @@
-import "./MonCV.css";
+import "./MonCv.css";
 
 function MonCv() {
   const competen = [

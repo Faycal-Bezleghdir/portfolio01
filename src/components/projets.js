@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import projet1Image from "../images/projet1.png";
 import projet2Image from "../images/projet2.png";
 import projet3Image from "../images/projet3.png";
-import "./Projets.css";
+import "./projets.css";
 
 function Projets() {
   const mesProjets = [

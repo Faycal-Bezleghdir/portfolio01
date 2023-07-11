@@ -1,15 +1,15 @@
 import React from "react";
-
+import { FiGithub, FiLinkedin } from "react-icons/fi";
 import "./Footer.css";
 
 function Footer() {
   return (
     <div className="footer">
       <a href="https://github.com/Faycal-Bezleghdir">
-        <img src="gitlogo.png" alt="github" className="gitlogo" />
+        <FiGithub className="icon" />
       </a>
       <a href="https://www.linkedin.com/in/faycal-bezleghdir-/">
-        <img src="linkedlogo.png" alt="logo" className="linkedlogo" />
+        <FiLinkedin className="icon" />
       </a>
     </div>
   );
